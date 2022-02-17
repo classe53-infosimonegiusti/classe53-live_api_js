@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app">
+        <div v-if="erroreVerificato">
+            Si è verificato un errore con una richiesta al server.
+        </div>
+        <h1>Il numero casuale generato per il computer è {{numeroCasuale}}</h1>
+        <ul>
+            <li v-for="numero in arrayNumeriCasuali">{{numero}}</li>
+        </ul>
+    </div>
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
